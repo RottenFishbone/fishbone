@@ -173,7 +173,7 @@
 <footer class="footer footer-center">
   <div class="text-xs">
     Copyright 2023 Jayden Dumouchel<br>
-    <a class="link" href="">Source Code</a>
+    <a class="link" href="https://github.com/RottenFishbone/fishbone">Source Code</a>
   </div>
 </footer>
 </main>
