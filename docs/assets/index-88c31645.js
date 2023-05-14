@@ -26,7 +26,7 @@
               and GLFW for windowing.<br/> 
               <br/>
               I&#39;ve spent an obscene amount of time creating algorithms to handle
-              falling &quot;sand&quot; in a robust way that simulates particle density and boyancy
+              falling &quot;sand&quot; in a robust way that simulates particle density and buoyancy
               in a system that simulates each pixel based on its properties. While
               I unfortunately hard-paused this project due to a lack of time (full-time
               university while working ~20-hours/week) I am extremely proud of my
