@@ -1,6 +1,9 @@
 <script lang="ts">
     import Accordion from "./lib/Accordion.svelte";
     import AccordionItem from "./lib/AccordionItem.svelte";
+
+    import lh_img from "./assets/lighthouse.png";
+    import lh_canny_img from "./assets/lh_canny.png";
     import passpls_sample from "./assets/passpls_sample.png";
     import wpm_sample from "./assets/wpm_sample.gif";
     import fs_sample from "./assets/fs_sample.mp4";
@@ -16,7 +19,7 @@
 
 <main>
 <div class="flex sm:justify-center my-[15vh]">
-  <div class="max-w-xl w-full">
+  <div class="max-w-2xl w-full">
     <div class="text-3xl flex flex-col">
       <span class="">Jayden Dumouchel</span>
       <div>
@@ -39,8 +42,8 @@
           I gravitate towards low level programming in C and Rust 
           but I believe its important to be familiar with as many paradigms and
           styles as possible. The diversity of my projects is a pursuit in that
-          endeavour, even if it usually isn't practical to reinvent the wheel
-          they always teach me something new.
+          endeavour. Even if it usually isn't practical to re-invent the wheel,
+          it never fails to teach me something new.
           </p>
         </div>
       </AccordionItem>
@@ -127,6 +130,30 @@
             </div>
           </AccordionItem>
           
+          <AccordionItem title="edgedetect" subtitle="Img Processing">
+            <div class="break-words">
+              <a class="link link-primary" href="https://github.com/RottenFishbone/edgedetect">
+                edgedetect</a> is a tiny image processing tool written from scratch in C. 
+              It provides various image detection methods, including the popular Canny method.<br>
+                <br>
+                I processed the image as 1D byte arrays, applying convolution 2D kernels by using
+                Moore neighbourhood offsets. Edge detection methods include basic filters/operators 
+                such as Sobel, Scharr, Roberts Cross. As well as complex methods such as Laplacian
+                of Gaussian and Canny.<br>
+                <br>
+                Many techniques used in this edge detector are fairly mathematically complex or use
+                poorly documented techniques such as edge thinning through threshold-hysteresis. I
+                believe this project serves as an execellent reference for how these are performed at 
+                low level, due to its simplicity in design.<br>
+                <br>
+                Below is an example of its output (Canny).
+            </div>
+            <div class="flex mt-5">
+              <img src={lh_img} class="w-full" alt="Original"/>
+              <img src={lh_canny_img} class="w-full" alt="Edge detected"/>
+            </div>
+         </AccordionItem>
+
           <AccordionItem title="passpls" subtitle="Passphrase gen">
             <div class="break-words">
               <a class="link link-primary" href="https://github.com/RottenFishbone/passpls">
